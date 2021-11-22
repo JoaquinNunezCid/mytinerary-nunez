@@ -1,0 +1,210 @@
+html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.cajaVideo {
+    width: 98vw;
+    height: 100vh;
+}
+
+body {
+    background-image: url(./assets/imghero.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+  }
+
+nav {
+    width: 100%;
+    position: absolute !important; 
+}
+
+img.usuario {
+    width: 30%;
+}
+
+img.logo {
+    width: 15%;
+    filter: invert(100);
+}
+
+.linkHeader {
+    text-decoration: none;
+    color: beige;
+    margin-left: 0.5vw;
+}
+
+nav.navbar {
+    background-color:rgba(255, 191, 0, 0.527) !important;
+}
+
+div.cajaHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+div.titulo {
+    text-align: center;
+}
+
+img.logoMyTinerary {
+    width: 50%;
+}
+
+div.footer {
+    display: flex;
+    background-color: rgba(255, 191, 0, 0.678);
+}
+
+div.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    width: 30%;
+    margin-left: 8vw;
+}
+
+img.redes {
+    width: 1vw;
+}
+
+div.main {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 2vw;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+h2, h1 {
+    text-align: center;
+    color: rgb(255, 191, 0) ;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    position: relative !important;
+}
+
+.h4, h4 {
+    font-size: 2vw !important;
+}
+
+h3 {
+    background-color: rgba(255, 191, 0, 0.637);
+}
+
+p, a {
+    font-size: 1vw;
+}
+
+p.choose {
+    color: whitesmoke;
+}
+
+section {
+    margin-top: 20% ;
+}
+
+img.pepito {
+    width: 40vw;
+    margin: 1vw;
+}
+
+button {
+    background-color: rgb(255, 191, 0);
+    padding: 3px;
+    transition: 1s;
+    border-color: black;
+}
+
+button:hover {
+    background-color: rgba(255, 191, 0, 0.507);
+    padding: 6px;
+    transition: 1s;
+}
+
+div.carousel-item {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div#root {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+div.cajaCities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+div#city {
+    width: 40vw;
+    height: 30vh;
+    margin: 2vh 1vw;
+}
+
+img.construction {
+    width: 100vw;
+}
+
+input {
+    position: relative;
+}
+
+@media only screen and (max-width: 990px) {
+    p, a, h4 {
+        font-size: 3vw;
+    }
+    div.cajaVideo {
+        height: 70vh;
+    }
+    div.cajaHero {
+        padding-top: 10vh;
+    }
+    img.logoMyTinerary {
+        width: 30vw;
+    }
+    div.footerBox {
+        display: flex;
+        width: 20%;
+        margin-left: 5vw;
+    }
+    
+    div.footerBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-between;
+        width: 30%;
+    }
+
+    div.texto {
+        display: none;
+    }
+
+    img.usuario {
+        width: 8vw;
+    }
+
+    img.photo {
+        background-position: cover cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
