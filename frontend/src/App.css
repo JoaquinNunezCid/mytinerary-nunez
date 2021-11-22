@@ -46,7 +46,7 @@ div.cajaHero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 17%;
 }
 
 div.titulo {
@@ -114,7 +114,7 @@ p.choose {
 }
 
 section {
-    margin-top: 20% ;
+    margin-top: 10% ;
 }
 
 img.pepito {
@@ -201,10 +201,7 @@ input {
         width: 8vw;
     }
 
-    img.photo {
-        background-position: cover cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+    section {
+        margin-top: 10% ;
     }
 }
