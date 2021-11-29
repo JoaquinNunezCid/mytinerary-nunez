@@ -1,32 +1,27 @@
 import { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 
-function Cards() {
-    const [cities, setCities] = useState([])
-    useEffect(()=>{
-        fetch("http://localhost:4000/api/cities")
-            .then(res => res.json())
-            .then(data => setCities(data.response))
-            .catch(err => console.error(err.message))
-    },[])
+function Cards({city}) {
+    const [cities, setCities] = useState(city)
+
     console.log(cities)
     return (
         <>
-            {cities.map(card => 
+            {city.city &&
             <div className="cardsFather">
-                <Link to={`/cities/${card._id}`}>
+                <Link to={`/cities/${city._id}`}>
                 <div className="cards">
-                    <h2>{card.city}</h2>
+                    <h2>{city.city}</h2>
                     <img
                         className='card'
-                        src={`./imagenes${card.image}`}
-                        alt={card.alt}
+                        src={`./imagenes${city.image}`}
+                        alt={city.alt}
                         />
-                    <p>{card.description}</p>
+                    <p>{city.description}</p>
                 </div>
                 </Link>
             </div>
-            )}
+            }
         </>
     )
 }

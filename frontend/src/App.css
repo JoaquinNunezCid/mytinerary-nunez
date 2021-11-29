@@ -178,12 +178,18 @@ div.cards {
     width: 70vw;
     margin-top: 2vh;
     margin-bottom: 1vh;
-    height: 30vh;
+    height: 33vh;
 }
 
 .card {
     width: 65vw;
     height: 24vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
 }
 
 @media only screen and (max-width: 990px) {
