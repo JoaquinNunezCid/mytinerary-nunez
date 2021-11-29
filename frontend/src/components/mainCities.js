@@ -1,20 +1,20 @@
 import React, { useState,useRef } from 'react'
 import Cards from '../components/cities/Cards'
 
-const MainCities = ( { arrayCiudades } )=>{
+const MainCities = ( { arrayCiudades: citiesArray } )=>{
 
-    const [ciudades,setCiudades] = useState(arrayCiudades)
-    const [ciudadesFiltradas,setCiudadesFiltradas] = useState( {ciudadesFiltradas:arrayCiudades} )
+    const [ciudades,setCiudades] = useState(citiesArray)
+    const [ciudadesFiltradas,setCiudadesFiltradas] = useState( {filteredCities:citiesArray} )
     const filtro = useRef()
 
     const filtrando = () => {
-        let ciudadesFiltradas = filtrarCiudades(ciudades, filtro.current.value)
-        setCiudadesFiltradas({ciudadesFiltradas})
+        let filteredCities = filterCities(ciudades, filtro.current.value)
+        setCiudadesFiltradas({filteredCities: filteredCities})
    }
-    const filtrarCiudades = (ciudades , value) => {
+    const filterCities = (ciudades , value) => {
         let aux = value.trim()
-        let arrayFiltrado = ciudades.filter( ciudad => ciudad.city.toLowerCase().startsWith( aux.toLowerCase() ) )
-        return arrayFiltrado 
+        let filteredArray = ciudades.filter( ciudad => ciudad.city.toLowerCase().startsWith( aux.toLowerCase() ) )
+        return filteredArray 
     }
     return (
         <>
@@ -24,9 +24,9 @@ const MainCities = ( { arrayCiudades } )=>{
                     </label>
                 </form>
                 {
-                ciudadesFiltradas.ciudadesFiltradas.length > 0 
-                ? ciudadesFiltradas.ciudadesFiltradas.map( ciudad => <Cards key={ciudad.ciudad} city={ciudad} /> )
-                : <h1>ERROR</h1>
+                ciudadesFiltradas.filteredCities.length > 0 
+                ? ciudadesFiltradas.filteredCities.map( ciudad => <Cards key={ciudad.ciudad} city={ciudad} /> )
+                : <h1>IT DOESN'T MATCH</h1>
             }
         </>
     )
