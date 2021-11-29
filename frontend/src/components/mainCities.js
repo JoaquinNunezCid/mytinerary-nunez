@@ -3,7 +3,7 @@ import Cards from '../components/cities/Cards'
 
 const MainCities = ( { arrayCiudades: citiesArray } )=>{
 
-    const [ciudades,setCiudades] = useState(citiesArray)
+    const [ciudades] = useState(citiesArray)
     const [ciudadesFiltradas,setCiudadesFiltradas] = useState( {filteredCities:citiesArray} )
     const filtro = useRef()
 
@@ -25,7 +25,7 @@ const MainCities = ( { arrayCiudades: citiesArray } )=>{
                 </form>
                 {
                 ciudadesFiltradas.filteredCities.length > 0 
-                ? ciudadesFiltradas.filteredCities.map( ciudad => <Cards key={ciudad.ciudad} city={ciudad} /> )
+                ? ciudadesFiltradas.filteredCities.map( ciudad => <Cards key={ciudad.ciudad} city={ciudad}/> )
                 : <h1>IT DOESN'T MATCH</h1>
             }
         </>

@@ -13,7 +13,7 @@ const City = () => {
         .then(res => {console.log(res)
           setCity(res.data.response)
         })
-    },[])
+    },)
 
 
     return (
@@ -21,17 +21,11 @@ const City = () => {
         <div>
                 {city && <div>
                     <h2>Discover the beauty of <span>{city.city}</span></h2>
-                    <div key={city._id}>
-                        <img src={city.image} alt={city.alt}/>
-                        <div >
-                            <p className="name-city">{city.city}</p>
-                        </div>
-                    </div>
                 </div>
                 }
                 <div>
                     <h2>UNDER CONSTRUCTION</h2>
-                    <Link to="/Cities" className="link-city"><button>BACK TO CITIES</button></Link>
+                    <Link to="/Cities"><button>BACK TO CITIES</button></Link>
                 </div>
         </div>
         </>

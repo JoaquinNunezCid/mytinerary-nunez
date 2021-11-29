@@ -21,13 +21,11 @@ export default class Cities extends React.Component {
 
   render() {
     return (
-      <>
-            <div>
-                <div>
-                { this.state.ciudades && <MainCities arrayCiudades={this.state.ciudades}/>}
-                </div>
-            </div>
-      </>
+        <>
+          <div className="cardsFather">
+          { this.state.ciudades && <MainCities arrayCiudades={this.state.ciudades}/>}
+          </div>
+        </>
     );
   }
 }
