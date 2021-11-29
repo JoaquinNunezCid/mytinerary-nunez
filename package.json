@@ -1,0 +1,30 @@
+{
+  "name": "mytinerary",
+  "version": "1.0.0",
+  "description": "mytinerary project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaquinNunezCid/mytinerary-nunez.git"
+  },
+  "keywords": [
+    "react",
+    "node"
+  ],
+  "author": "Joaquín Núñez Cid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaquinNunezCid/mytinerary-nunez/issues"
+  },
+  "homepage": "https://github.com/JoaquinNunezCid/mytinerary-nunez#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
+  }
+}

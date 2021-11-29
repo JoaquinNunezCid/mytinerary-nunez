@@ -1,7 +1,10 @@
 import React from 'react'
+import Cards from '../components/cities/Cards'
 
 const Cities = () => {
-    return <div>city</div>
+    return (
+        <Cards/>
+    )
 }
 
 export default Cities

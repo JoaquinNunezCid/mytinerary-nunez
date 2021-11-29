@@ -20,11 +20,10 @@ body {
 
 nav {
     width: 100%;
-    position: absolute !important; 
 }
 
 img.usuario {
-    width: 30%;
+    width: 20%;
 }
 
 img.logo {
@@ -46,7 +45,7 @@ div.cajaHero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 17%;
+    padding-top: 13%;
 }
 
 div.titulo {
@@ -164,6 +163,27 @@ img.construction {
 
 input {
     position: relative;
+}
+
+div.cardsFather {
+    display: flex;
+    justify-content: center;
+}
+
+div.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 70vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 30vh;
+}
+
+.card {
+    width: 65vw;
+    height: 24vh;
 }
 
 @media only screen and (max-width: 990px) {

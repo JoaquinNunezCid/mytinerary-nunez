@@ -33,7 +33,7 @@ const MainCarousel = () => {
                                     <div key={index}>
                                         <h3>{foto.city}</h3>
                                         <img
-                                        className='d-block pepito' 
+                                        className='d-block pepito'
                                         src={`./imagenes${foto.imagen}`}
                                         alt={`./imagenes${foto.alt}`}
                                         />
