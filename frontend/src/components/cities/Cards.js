@@ -8,7 +8,7 @@ function Cards({city}) {
     console.log(cities)
     return (
         <>
-            <Card className="card bg-dark text-white">
+            <Card className="card bg-dark text-white image-box">
                 <Link to={`/cities/${city._id}`}>
                     <Card.Img src={`./imagenes${city.image}`} alt={city.alt} />
                     <Card.ImgOverlay>

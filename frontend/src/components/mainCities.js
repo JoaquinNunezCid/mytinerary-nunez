@@ -2,7 +2,6 @@ import React, { useState,useRef } from 'react'
 import Cards from '../components/cities/Cards'
 
 const MainCities = ( { arrayCiudades: citiesArray } )=>{
-
     const [ciudades] = useState(citiesArray)
     const [ciudadesFiltradas,setCiudadesFiltradas] = useState( {filteredCities:citiesArray} )
     const filtro = useRef()
@@ -14,7 +13,7 @@ const MainCities = ( { arrayCiudades: citiesArray } )=>{
     const filterCities = (ciudades , value) => {
         let aux = value.trim()
         let filteredArray = ciudades.filter( ciudad => ciudad.city.toLowerCase().startsWith( aux.toLowerCase() ) )
-        return filteredArray 
+        return filteredArray
     }
     return (
         <>

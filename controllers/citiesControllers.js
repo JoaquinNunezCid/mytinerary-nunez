@@ -5,6 +5,7 @@ const citiesControllers = {
     let cities
     let error = null
 
+
     try { 
       cities = await City.find()
     }catch(err) {
@@ -13,7 +14,7 @@ const citiesControllers = {
     }
 
     res.json({
-      response: error ? 'ERROR' : cities, 
+      response: error ? 'ERROR AL IMPORTAR CITIES' : cities,
       success: error ? false : true,
       error: error
     })
@@ -24,6 +25,7 @@ const citiesControllers = {
     new City({city, image, alt, badge, country, description}).save()
     .then((response) => res.json({response}))
   },
+
   getCity: async(req, res) => {
 
     let cities
