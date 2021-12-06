@@ -1,49 +1,81 @@
 const Itinerary = require("../models/Itinerary")
 
 const itinerariesControllers = {
-    getItineraries: async (req, res) => {
-        try {
-            let itineraries = await Itinerary.find()
-            res.json({success: true, response: itineraries})
-        }catch(error){
-            res.json({success: false, response: error})
-        }
-    },
-    
-    getItineraryById: async (req, res) => {
-        let itinerary = await Itinerary.findOne({_id : req.params.id})
-        res.json({success: true, response: itinerary})
-    },
-
-    newItinerary: async (req, res) => {
-        let newItinerary = new Itinerary({ ...req.body}) 
-        try {
-            const itineraryN = await newItinerary.save()
-            res.json({success: true, response: itineraryN})    
-        }catch(error){
-        res.json({success: false, response: error})
+  
+  obtenerTodasLosItinerarios: async (req,res) => {
+    try {
+        const itineraries = await Itinerary.find().populate('cityID')
+        res.json({success: true, respuesta: itineraries})
+    } catch(error) {
+        console.log(error)
+        res.json({success: false, respuesta: "Oops!error"})
     }
-    },
+},
+obtenerItinerariosCiudades: async (req,res) => {
+  const cityId = (req.params.id)
+  try {
+      const selectedCityItineraries = await Itinerary.find({cityID: cityId})
+      if (selectedCityItineraries.length != 0) {
+          res.json({success: true, respuesta: selectedCityItineraries})
+      } else{
+      res.json({success: false, respuesta: []})
+  }
+  }  catch(error) {
+    console.log(error)
+    res.json({success: false, respuesta: "Oops!error"})
+  }    
+},
+  cargarUnItinerario: async(req,res)=>{
+    const itinerary =  req.body
+    console.log(req.body)
+    let respuesta
+    try{
 
-    deleteItinerary: async (req, res) => {
-        try {
-            let itineraryDeleted = await Itinerary.findOneAndDelete({_id: req.params.id})
-            res.json({success: true, response: itineraryDeleted})
-        }catch(error){
-        res.json({success: false, response: error})
+        respuesta = await new Itinerary(itinerary).save()
+
+    }catch(error) {
+      console.log(error)
+      res.json({success: false, respuesta: "Oops!error"})
+  }
+    res.json(respuesta)
+},
+
+  obtenerUnItinerario: async (req, res) => {
+    let itinerarys;
+    const id = req.params.id;
+    try {
+        itinerarys = await Itinerary.findOne({ _id: id }).populate("id")
+      }catch(error) {
+        console.log(error)
+        res.json({success: false, respuesta: "Oops!error"})
     }
-    },
+    res.json({ respuesta: itinerarys, success: true });
+  },
 
-    changeItinerary: async (req, res) => {
-        try {
-            let itineraryChanged = await Itinerary.findOneAndUpdate({_id: req.params.id}, {...req.body}, {new : true})
-            res.json({success: true, response: itineraryChanged})
-        }catch(error){
-        res.json({success: false, response: error})
+  borrarUnItinerario: async (req, res) => {
+    const id = req.params.id;
+    try {
+      await Itinerary.findOneAndDelete({ _id: id });
+      const itinerarys = await Itinerary.find();
+    } catch (error) {
+      console.log(error);
     }
-    },
+    res.json({ respuesta: itinerarys});
+  },
+  modificarUnItinerario: async (req, res) => {
+    let id = req.params.id;
+    let  = req.body;
+    let actualizado;
+    try {
+      actualizado = await Itinerary.findOneAndUpdate({ _id: id }, cities, {
+        new: true,
+      });
+    } catch (error) {
+      console.log(error);
     }
+    res.json({ success: actualizado ? true : false });
+  },
 
+};
 
-
-module.exports = itinerariesControllers
+module.exports = itinerariesControllers;

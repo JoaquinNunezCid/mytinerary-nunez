@@ -154,10 +154,6 @@ div#city {
     margin: 2vh 1vw;
 }
 
-img.construction {
-    width: 100vw;
-}
-
 form {
     display: flex;
     justify-content: center;
@@ -202,6 +198,19 @@ form {
 
 div.body {
     min-height: 66.71vh;
+}
+
+div.itineraries-father {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.filterInput {
+    width: 100vw;
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 990px) {

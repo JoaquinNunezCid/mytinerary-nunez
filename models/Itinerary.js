@@ -1,21 +1,21 @@
-const mongoose= require("mongoose")
+const mongoose = require('mongoose');
 
-const itinerarySchema = new mongoose.Schema({
-    itinerary: {type: String, required: true},
-    author: {type: Object, require: true},
-    price: {type: Number, required: true, min: 1, max: 5},
-    duration: {type: Number, required: true},
-    likes: {type: Array},
-    hashtag: {type: Array, required: true},
-    comments: [{
-        comment: {type: String},
-        userId: {type:mongoose.Types.ObjectId, ref: "user"}
-    }],
-    photo: {type: String},
-    description: {type: String},
-    cityID: {type: mongoose.Types.ObjectId, ref: "city"}
-}) 
+const itinerarysSchema = new mongoose.Schema({
+    name:{type:String, required: true},
+    lastName:{type:String, required: true},
+    personImage:{type:String, required: true},
+    price:{ type:Number, required: true },
+    duration:{ type:Number, required: true },
+    hashtags:[
+    String,
+    String,
+    String
+    ],
+    cityID:	[{type: mongoose.Types.ObjectId, ref: 'city', required:true}],
+    likes:{ type:Number},
+    comment:{type:String},
 
-const Itinerary = mongoose.model("itinerary", itinerarySchema)
+})
 
-module.exports = Itinerary 
+const Itinerary = mongoose.model('itinerary',itinerarysSchema)
+module.exports = Itinerary;
