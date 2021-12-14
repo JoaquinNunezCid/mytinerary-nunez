@@ -23,9 +23,9 @@ img.usuario {
     width: 20%;
 }
 
-img.logo {
-    width: 15%;
-    filter: invert(100);
+.logo{
+    width: 8rem;
+    padding-left: 1rem; 
 }
 
 .linkHeader {
@@ -118,23 +118,14 @@ img.pepito {
     margin: 1vw;
 }
 
-button {
-    background-color: rgb(255, 191, 0);
-    padding: 3px;
-    transition: 1s;
-    border-color: black;
-}
-
-button:hover {
-    background-color: rgba(255, 191, 0, 0.507);
-    padding: 6px;
-    transition: 1s;
-}
-
 div.carousel-item {
     align-content: center;
     justify-content: center;
     text-align: center;
+}
+
+p.callToAction {
+    color: whitesmoke;
 }
 
 div#root {
@@ -212,6 +203,167 @@ div.filterInput {
     margin-bottom: 2vh;
     justify-content: center;
 }
+
+div.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.dropdown-item{
+    width: fit-content;
+}
+
+div.account {
+    width: 20%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.userdiv{
+    margin-right:5rem;
+}
+
+.user{
+   width: 2.5rem;
+}
+
+.userProfilePhoto, .userIcon {
+    margin-top: 1vh;
+    background-position: 50%;
+    width: 4em;
+    height: 4em;
+    background-size: cover;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+img.logos {
+    width: 15%;
+    filter: invert(100);
+}
+
+.logo{
+    width: 8rem;
+    padding-left: 1rem; 
+}
+
+.navheader{
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+}
+nav a, .signOut, .welcome{
+    align-self: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    align-self: center;
+    padding: 0 1rem;
+    margin-bottom:0 !important;
+}
+
+li{
+    list-style-type:none;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: black;
+}
+
+.nav-link {
+    color:black !important;
+}
+
+nav a:hover{
+    color: rgb(1, 155, 1)
+}
+
+.signOut:hover{
+    color: rgb(1, 155, 1)
+}
+
+.signUpTittle h2, .signInTittle h2{
+    font-weight: bold;
+    color:#cfcfcf;
+    font-size: 7vmin;
+}
+
+.signUpTittle h4, .signInTittle h4 {
+    font-size: 3vmin;
+}
+
+.signUpBack, .signInBack {
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh;
+    background-size:cover;
+    background-position:center center;
+}
+.signInBack, .signUpBack{
+    min-height: 90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.signInBack {
+min-height: 86vh;
+}
+
+.signInTittle{
+    padding: 2rem;
+}
+
+.formContainer, .formContainerSignIn{
+    padding: 2rem 2rem;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContainer form, .signInForm {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+form input, form select, .signInForm input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.formButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+.formButtons button {
+    padding: .3rem 0;
+    margin: .2rem;
+}
+
+form span, .signInForm span {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    border: none;
+    padding: 2vh 2vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 3px rgba(175, 174, 174, 0.253);
+
+}
+
+.eyeIcon {
+    cursor: pointer;
+} 
 
 @media only screen and (max-width: 990px) {
     p, a, h4 {

@@ -1,26 +1,46 @@
-const Router = require('express').Router();
-
+const express = require('express')
 const citiesControllers = require('../controllers/citiesControllers')
 const itinerariesControllers=require("../controllers/itinerariesControllers")
+const userController = require ('../controllers/userController')
+const passport = require("../config/passport")
+const Router = require('express').Router();
+const validator = require("../controllers/validator")
 
 const {getAllCities, getCity, addCity, deteleCity, modifyCity} = citiesControllers;
 const {obtenerTodasLosItinerarios,  cargarUnItinerario, obtenerUnItinerario,obtenerItinerariosCiudades} = itinerariesControllers
+const {addNewUser, logInUser, deleteUser, editUser, verifyToken} = userController
 
 Router.route('/cities')
  .get(getAllCities)
  .post(addCity)
 
- Router.route('/cities/:id')
+Router.route('/cities/:id')
  .get(getCity)
  .delete(deteleCity)
  .put(modifyCity)
 
- Router.route('/city/itinerary/:id')
+Router.route('/city/itinerary/:id')
  .get(obtenerItinerariosCiudades)
- Router.route('/itineraries')
+Router.route('/itineraries')
  .get(obtenerTodasLosItinerarios)
  .post(cargarUnItinerario)
- Router.route('/itinerary/:id')
+Router.route('/itinerary/:id')
  .get(obtenerUnItinerario)
+
+Router.route("/user/signup")
+ .post(validator,addNewUser)
+ 
+Router.route("/user/signin")
+ .post(logInUser)
+ 
+Router.route("/user/:id")
+ .delete(deleteUser)
+ .put(editUser)
+ 
+Router.route ("/verifyToken")
+ .get(
+     passport.authenticate('jwt', {session:false}),
+     verifyToken
+     )
  
  module.exports = Router
