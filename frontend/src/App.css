@@ -375,7 +375,7 @@ form span, .signInForm span {
   .nombreGuia{
     color: antiquewhite;
     font-size: 3vw;
-    text-decoration: underline rgb(11, 237, 245);
+    text-decoration: underline rgb(50, 131, 40);
   }
   .card .img-cards{
    
@@ -392,7 +392,7 @@ form span, .signInForm span {
     height: 15vh;
     width: 11vw;
     border-radius: 10vh;
-    border: solid 5px  rgb(11, 237, 245);
+    border: solid 5px  rgb(50, 131, 40);
   }
   .card{
     background-color: black !important;
@@ -403,7 +403,7 @@ form span, .signInForm span {
   .itinerarioContenedor{
     height: 100%;
     width: 60vw;
-    background-image: linear-gradient( 109.6deg,  rgba(15,2,2,1) 11.2%, rgba(36,163,190,1) 91.1% );
+    background-image: linear-gradient( 109.6deg,  rgba(15,2,2,1) 11.2%, rgb(50, 131, 40) 91.1% );
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 3%;
@@ -461,11 +461,11 @@ form span, .signInForm span {
   }
   .dropdown-item:hover{
     background-color: rgb(37, 37, 37) !important;
-    color: rgb(24, 243, 232) !important;
+    color: rgb(50, 131, 40) !important;
   }
   .dropdown-menu{
     background-color: rgb(37, 37, 37) !important;
-    color: rgb(24, 243, 232) !important;
+    color: rgb(50, 131, 40) !important;
   }
   
   .link-contenedor:hover{
