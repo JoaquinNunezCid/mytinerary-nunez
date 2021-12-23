@@ -115,7 +115,7 @@ const SignUp = (props) => {
                         <GoogleLogin
                                     clientId="288982215427-p81ih2ji8u45u2k302p39duuamd1gqtj.apps.googleusercontent.com"
                                     render={renderProps => (
-                                    <button onClick={renderProps.onClick} disabled={renderProps.disabled}>Sign in with Google</button>
+                                    <button onClick={renderProps.onClick} disabled={renderProps.disabled}>Sign up with Google</button>
                                     )}
                                     buttonText="Login"
                                     onSuccess={responseGoogle}

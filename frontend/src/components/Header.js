@@ -46,13 +46,13 @@ const Header = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
               {!props.token && (<DropdownItem>
-                <Link to= "/signIn">Sign in</Link>
+                <Link to= "/signIn">Log in</Link>
                 </DropdownItem>)}
                 {!props.token && (<DropdownItem>
                 <Link to="/signUp">Sign up</Link>
                 </DropdownItem>)}
                 {props.token && <DropdownItem>
-               <p className="signOut"onClick={()=> props.signOutUser()}> Sign out</p>
+               <p className="signOut"onClick={()=> props.signOutUser()}>Log out</p>
                 </DropdownItem>}
               </DropdownMenu>
            </div>

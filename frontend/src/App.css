@@ -363,7 +363,477 @@ form span, .signInForm span {
 
 .eyeIcon {
     cursor: pointer;
-} 
+}
+
+.headerItinerario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 27vh;
+  }
+  .nombreGuia{
+    color: antiquewhite;
+    font-size: 3vw;
+    text-decoration: underline rgb(11, 237, 245);
+  }
+  .card .img-cards{
+   
+    width: 100%;
+    height: 8rem;
+    max-width: 900px;
+    max-height: 300px;
+    
+    height: 60vh;
+    background-size: contain;
+    background-color: black !important;
+  }
+  .iconoItinerarios{
+    height: 15vh;
+    width: 11vw;
+    border-radius: 10vh;
+    border: solid 5px  rgb(11, 237, 245);
+  }
+  .card{
+    background-color: black !important;
+  }
+  .cuerpo-hero{
+    height: 90vh;
+  }
+  .itinerarioContenedor{
+    height: 100%;
+    width: 60vw;
+    background-image: linear-gradient( 109.6deg,  rgba(15,2,2,1) 11.2%, rgba(36,163,190,1) 91.1% );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+  }
+  .accordion-body{
+    color: black;
+  }
+  .imgActi{
+    height: 70%;
+  }
+  .contenedorTitulo{
+    height: 30%;
+  }
+  .cards{
+    background-color: rgb(46, 46, 46) !important;
+  }
+  .cards-texto{
+    color: white !important;
+  }
+  .actividades{
+    display: flex;
+    
+    height: 20%;
+    justify-content: space-around;
+  }
+  .cometariosContenedor{
+   box-sizing: content-box;
+  }
+  .cardActivi{
+    margin-left: 5% !important;
+    height: 30vh;
+  }
+  .tituloActi{
+    color: white !important;
+    font-size: 1vw !important; 
+  }
+  div.activityPic {
+    background-position: center;
+    background-size: cover;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 10px;
+  }
+  div.activity {
+    display: flex;
+    
+  }
+  .dropdown-item{
+    color: white !important;
+    width: 3vw !important;
+  
+  }
+  .espacio{
+    width: 5vw;
+  }
+  .dropdown-item:hover{
+    background-color: rgb(37, 37, 37) !important;
+    color: rgb(24, 243, 232) !important;
+  }
+  .dropdown-menu{
+    background-color: rgb(37, 37, 37) !important;
+    color: rgb(24, 243, 232) !important;
+  }
+  
+  .link-contenedor:hover{
+    background-color: rgb(59, 58, 58);
+    border-radius: 2rem;
+  
+  }
+  .mytinerary-navbar{
+    color: antiquewhite;
+    font-size: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .contenedor-poster{
+    height: 60vh;  
+  display: flex;
+  justify-content: center;
+  }
+  .pencil{
+    height: 2vw;
+  }
+  .hastags{
+    color: aqua;
+    padding-left: 2vh;
+  }
+  /* comentarios*/
+  div.profilePicContainter, div.profilePic {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+   
+  }
+  div.textArea {
+    display: flex;
+  }
+  
+  div.textArea p {
+    background-color: lightslategray;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: .5rem;
+    font-size: 2vmin;
+    margin-left: 2rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+  }
+  .barrabusqueda{
+    height: 7vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    border: solid black 6vh 0 0 0;
+    padding-bottom: 3vh;
+  
+  }
+  .likes{
+    font-size: 4vh;
+    color: white;
+  }
+  .contenedor-citisl{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tamaño{
+    height: 20vh;
+  }
+  
+  .textbusc{
+    font-size: 3vw;
+  }
+  .buscador{
+    width: 40vw;
+  }
+  .espaciado.carusel{
+    height: 20vh;
+    background-color: black;
+    
+  }
+  .contenedor-texto-post{
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-top: 13vh;
+    height: 40vh;
+    width: 55vw;
+    border-radius: 3vw ;
+  }
+  .texto-poster{
+    font-size: 10vw;
+    text-align: center;
+    
+    color:rgb(24, 243, 232);
+    
+  }
+  
+  
+  /* herooooooo...................... */
+  
+  .cuerpo{
+    
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .cartel-cuerpo{
+   background-color: rgba(72, 165, 145, 0.418);
+   height: 60vh;
+   box-shadow: 1vw 3vh 8vh 2vh rgba(232, 241, 221, 0.573);
+   border-radius: 3rem;
+   padding: 1.5rem;
+  }
+  .p-cartel{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(249, 255, 254);
+   
+    
+  }
+  .p-hero-uno{
+    font-family: cursive;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 2vw;
+  
+  }
+  .p-hero-dos{
+    font-family: cursive;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 3vw;
+  
+  }
+  .p-hero-tres{
+    font-family: cursive;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 2vw;
+  
+  }
+  .boton-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subtitulo{
+    font-size: 8vw;
+    text-align: center;
+    color: rgb(24, 243, 232);
+  }
+  .boton-cartel{
+    background-color: rgb(174, 0, 255);
+    margin-top: 1rem;
+    padding:1rem;
+    color: black;
+    margin-bottom:1rem;
+  }
+  
+  .construction{
+    background-color: turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34vh;
+    width: 30vw;
+    height: 20vh;
+    margin-left: 37vw;
+  }
+  .cityCartel{
+    background-color: black;
+    height: 50vh;
+    width: 80vw;
+  }
+  .contenedorCity{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+  .foto-carne{
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .contenedorItinerario{
+    background-color:rgb(26, 26, 26);
+    width: 70vw;
+    border: solid 3px black;
+    border-radius: 1vw;
+  }
+  .dato1{
+    border: solid 3px black;
+    width: 49.9vw;
+    border-radius:0 1vw 0  0 ;
+  }
+  .pricio{
+    color: rgb(250, 250, 250);
+    font-weight:bold;
+  
+    
+  }
+  .contenedorLikes{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .botonvuelta{
+    height: 30vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .datos3{
+  justify-content: space-around;
+    display: flex;
+    height: 10vh;
+  }
+  .heart{
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+   
+  }
+  .corazon{
+    background-color: rgb(75, 74, 74);
+    border-radius: 2vh;
+    display: flex;
+    margin-bottom: 4vh;
+    width: 9vh;
+  }
+  .hastag{
+    display:flex;
+    font-size: 2vw;
+  }
+  .price{
+    display:flex;
+    font-size: 3vw;
+  }
+  .duration{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+  }
+  .dato2{
+    display: flex;
+    justify-content: space-around;
+  }
+  .datosItinerario{
+    display: flex;
+    flex-direction: column;
+  }
+  .nombreItinerario{
+    font-size: 5vw;
+    text-align: center;
+    color: aqua;
+    
+  }
+  .cardItinerario{
+  display: flex;
+  }
+  
+  .imagenEle{
+    height: 42vh;
+    width: 100%;
+    
+  }
+  .relative{
+    position: relative;
+    bottom: 20vh;
+  }
+  .accordion-button{
+    background-image: url(../src/assets/itienrarios.jpg);
+    border: rgb(31, 30, 30) solid 3px !important;
+    color: aqua !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+  }
+  .contenedortodo{
+    height: 100vh;
+    background-color:rgb(31, 30, 30) ;
+  }
+  .contenedorItinerarios{
+    background-color:rgb(31, 30, 30) ;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .foterCity{
+    height: 5vh;
+  }
+  .sinItinerarios{
+    height: 30vh;
+    width: 40vh;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 3vw;
+    border: solid black 5px;
+    
+  }
+  
+  
+  .volverAciTy{
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .titulociudad{
+    text-align: center;
+    color: aqua;
+    
+  }
+  .contenedorCartelCiudad{
+    background-color: black;
+    
+    width: 100vw;
+    height: 50vh;
+  }
+  
+  
+  
+  .citi-name{
+    text-align: center;
+      background-color: rgba(137, 43, 226, 0.76);
+      width: 28.8%;
+      margin: 0;
+      margin-top: 17vh;
+      position: absolute;
+      color: rgb(13, 13, 14);
+      font-style: italic;
+      font-size: 2vh;
+      font-weight: bold;
+  }
+  
+  .imagenes{
+    width: 50px;
+  }
+  
+  
+  .poster-texto{
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(165, 101, 23);
+  }
+  
+  
+  .sinresultado{
+    height: 35vh;
+    width: 30vw;
+    background-color: aqua;
+    border-radius:2rem ;
+    text-align: center;
+    margin-left: 30vw;
+  }
 
 @media only screen and (max-width: 990px) {
     p, a, h4 {
@@ -409,6 +879,10 @@ form span, .signInForm span {
         overflow: hidden;
         width: 45vw;
     }
+    .formContainer, .formContainerSignIn{
+        width:45vw;
+    }
+ 
 }
 
 @media only screen and (max-width: 550px) {
@@ -416,5 +890,8 @@ form span, .signInForm span {
         position: relative;
         overflow: hidden;
         width: 75vw;
+    }
+    .formContainer, .formContainerSignIn{
+        width:80vw;
     }
 }

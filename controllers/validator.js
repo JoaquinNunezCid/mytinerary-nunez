@@ -13,7 +13,7 @@ const validator = (req, res, next) => {
         email:joi.string().trim().email().required().messages({
             'string.email' : 'You must use a valid email account'
         }),
-        password:joi.string().min().trim().required().messages({
+        password:joi.string().min(5).trim().required().messages({
             'string.empty' : 'You must complete this field',
         }),
         profilePhoto:joi.string().min(5).trim().required().messages({
